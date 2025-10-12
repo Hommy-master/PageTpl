@@ -1,10 +1,11 @@
 import createMiddleware from 'next-intl/middleware';
 import { NextRequest } from 'next/server';
+import { routing } from '@/routing';
 
 const nextIntlMiddleware = createMiddleware({
-  locales: ['en', 'zh'],
-  defaultLocale: 'en',
-  localePrefix: 'always',
+  locales: routing.locales,
+  defaultLocale: routing.defaultLocale,
+  localePrefix: 'as-needed', // 只有默认语言才加前缀， 'always': 所有加
 });
 
 export default function middleware(req: NextRequest) {

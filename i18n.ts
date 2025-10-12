@@ -1,5 +1,5 @@
 import { getRequestConfig } from 'next-intl/server';
-import { routing } from './routing';
+import { routing } from '@/routing';
 
 export default getRequestConfig(async ({ locale }) => {
   // 如果没有提供 locale，使用默认语言

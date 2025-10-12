@@ -1,9 +1,18 @@
-import {useTranslations} from 'next-intl';
-import {Button} from '@/components/nextui';
+import { getTranslations } from "next-intl/server";
+import { Button } from "@/components/nextui";
 
+export default async function HomePage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
 
-export default function HomePage() {
-  const t = useTranslations('home');
-  return (<><h1 className="text-2xl">{t('title')}</h1>
-  <Button color="primary">测试</Button></>);
+  const t = await getTranslations({ locale, namespace: "home" });
+  return (
+    <>
+      <h1 className="text-2xl">{t("title")}</h1>
+      <Button color="primary">测试</Button>
+    </>
+  );
 }
