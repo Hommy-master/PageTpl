@@ -1,0 +1,13 @@
+{
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "login": "Login"
+    },
+    "home": {
+      "title": "Welcome Home"
+    },
+    "about": {
+      "title": "About Us"
+    }
+  }
