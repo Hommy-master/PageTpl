@@ -1,6 +1,6 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
-import TopNav from '@/components/topNav';
+import TopNav from '@/components/TopNav';
 import { Providers } from '@/app/providers';
 
 export default async function LocaleLayout({

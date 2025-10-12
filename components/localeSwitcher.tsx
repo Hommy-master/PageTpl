@@ -2,11 +2,7 @@
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from '@nextui-org/react';
 import {useRouter, usePathname} from 'next/navigation';
 import {useTransition} from 'react';
-
-const languages = [
-  {key: 'en', label: 'English'},
-  {key: 'zh', label: '中文'},
-];
+import { languages } from '@/i18n/config';
 
 export default function LocaleSwitcher() {
   const router = useRouter();
