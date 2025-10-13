@@ -1,13 +1,30 @@
 {
-    "nav": {
-      "home": "Home",
-      "about": "About",
-      "login": "Login"
-    },
-    "home": {
-      "title": "Welcome Home"
-    },
-    "about": {
-      "title": "About Us"
-    }
+  "common": {
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register"
+  },
+  "nav": {
+    "home": "Home",
+    "generator": "Image Editor",
+    "showcase": "Showcase",
+    "tools": "Toolbox",
+    "pricing": "Pricing",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome Home"
+  },
+  "generator": {
+    "title": "Image Editor"
+  },
+  "showcase": {
+    "title": "Showcase"
+  },
+  "tools": {
+    "title": "Tools"
+  },
+  "pricing": {
+    "title": "Pricing"
   }
+}

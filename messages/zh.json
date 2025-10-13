@@ -1,13 +1,30 @@
 {
-    "nav": {
-      "home": "首页",
-      "about": "关于",
-      "login": "登录"
-    },
-    "home": {
-      "title": "欢迎回家"
-    },
-    "about": {
-      "title": "关于我们"
-    }
+  "common": {
+    "login": "登录",
+    "logout": "退出登录",
+    "register": "注册"
+  },
+  "nav": {
+    "home": "首页",
+    "generator": "图片编辑器",
+    "showcase": "作品展示",
+    "tools": "工具箱",
+    "pricing": "价格方案",
+    "contact": "联系我们"
+  },
+  "home": {
+    "title": "欢迎回家"
+  },
+  "generator": {
+    "title": "图片编辑器"
+  },
+  "showcase": {
+    "title": "作品展示"
+  },
+  "tools": {
+    "title": "工具箱"
+  },
+  "pricing": {
+    "title": "价格方案"
   }
+}

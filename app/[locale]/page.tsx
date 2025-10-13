@@ -1,5 +1,4 @@
 import { getTranslations } from "next-intl/server";
-import { Button } from "@/components/NextUI";
 
 export default async function HomePage({
   params,
@@ -12,7 +11,6 @@ export default async function HomePage({
   return (
     <>
       <h1 className="text-2xl">{t("title")}</h1>
-      <Button color="primary">测试</Button>
     </>
   );
 }
