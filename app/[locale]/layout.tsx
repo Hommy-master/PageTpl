@@ -17,7 +17,7 @@ export default async function LocaleLayout({
         <NextIntlProviderWrapper messages={messages} locale={locale}>
           <NextUIProviderWrapper>
             <Header />
-            <main className="px-6 py-4">{children}</main>
+            <main>{children}</main>
           </NextUIProviderWrapper>
         </NextIntlProviderWrapper>
       </body>

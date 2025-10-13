@@ -11,7 +11,7 @@ export default function TopNav() {
   return (
     <Navbar maxWidth="2xl" isBordered className='border-b-yellow-200'>
       <NavbarBrand>
-        <Link color="foreground" href="/" className='font-bold text-inherit hover:text-amber-600'>Demo</Link>
+        <Link color="foreground" href="/" className='font-bold text-inherit text-amber-600 hover:text-amber-400'>Demo</Link>
       </NavbarBrand>
 
       <NavbarContent className="gap-4" justify="center">
