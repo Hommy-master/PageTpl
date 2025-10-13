@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { Button } from "@/components/Nextui";
+import { Button } from "@/components/NextUI";
 
 export default async function HomePage({
   params,
