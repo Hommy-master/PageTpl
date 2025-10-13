@@ -18,7 +18,7 @@ export async function getRouteIntl(namespace = 'global') {
   const locale = pathname.match(/^\/(\w{2})(\/|$)/)?.[1] || routing.defaultLocale
   const routeKey = pathname.replace(`/${locale}`, '').replace(/^\//, '');
 
-  // 3. 按需加载命名空间字典（messages/[locale].json）
+  // 3. 按需加载命名空间字典（messages/[locale]/[routeKey].json）
   const t = await getTranslations({ locale, namespace })
 
   return { locale, routeKey, t }

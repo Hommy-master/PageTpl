@@ -6,31 +6,70 @@ First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# 暂定的目录结构
+my-app/
+├── app/                    # Next.js App Router
+│   ├── [locale]/
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── providers/          # Provider 组件
+│   │   ├── index.ts
+│   │   ├── nextui.tsx
+│   │   └── next-intl.tsx
+│   └── layout.tsx
+├── components/             # React 组件
+│   ├── ui/                # 基础 UI 组件
+│   │   ├── Button.tsx
+│   │   └── Input.tsx
+│   ├── forms/                 # 表单相关组件
+│   │   ├── LoginForm.tsx
+│   │   ├── ContactForm.tsx
+│   │   └── SearchForm.tsx
+│   ├── layout/                # 布局组件
+│   │   ├── Header.tsx
+│   │   ├── Footer.tsx
+│   │   ├── Sidebar.tsx
+│   └── features/           # 功能模块组件
+│   │   ├── auth/
+│   │   │   ├── UserProfile.tsx
+│   │   │   └── LoginButton.tsx
+│   │   └── home/
+│   │   │   └── StatsCard.tsx
+│   └── shared/                # 共享业务组件
+│   │   ├── UserAvatar.tsx
+│   │   └── PriceDisplay.tsx
+├── lib/                   # 业务逻辑和工具函数
+│   ├── utils/
+│   │   ├── formatters.ts
+│   │   └── validators.ts
+│   ├── consts/
+│   │   └── nav.ts
+│   ├── api/
+│   │   ├── client.ts
+│   │   ├── users.ts
+│   │   └── products.ts
+│   ├── validation/
+│   │   ├── auth.ts
+│   │   └── users.ts
+│   └── types/
+│       ├── api.ts
+│       └── app.ts
+├── hooks/                 # 自定义 React Hooks
+│   ├── use-auth.ts
+│   └── use-local-storage.ts
+├── styles/                # 样式文件
+│   └── globals.css
+├── public/                # 静态资源
+│   ├── images/
+│   └── icons/
+├── .eslintrc.json         # ESLint 配置
+├── .prettierrc.json       # Prettier 配置
+├── tsconfig.json          # TypeScript 配置
+├── next.config.js         # Next.js 配置
+├── package.json           # 依赖管理
+└── README.md              # 项目说明
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

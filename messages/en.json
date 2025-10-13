@@ -2,7 +2,9 @@
   "common": {
     "login": "Login",
     "logout": "Logout",
-    "register": "Register"
+    "register": "Register",
+    "language": "Language",
+    "selectLanguage": "EN"
   },
   "nav": {
     "home": "Home",
@@ -13,7 +15,10 @@
     "contact": "Contact"
   },
   "home": {
-    "title": "Welcome Home"
+    "title": "Welcome Home",
+    "detail" : {
+      "title" : "Welcome to our website"
+    }
   },
   "generator": {
     "title": "Image Editor"
