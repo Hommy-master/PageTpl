@@ -1,0 +1,37 @@
+/* 1. 默认浅色蓝 */
+:root {
+    --color-primary: 199 89% 48%;
+    --color-primary-foreground: 0 0% 100%;
+    --color-background: 0 0% 100%;
+    --color-foreground: 222 47% 11%;
+    --font-size-base: 16px;
+    --spacing-unit: 1rem;
+    --radius: 0.5rem;
+  }
+  
+  /* 2. 深色主题 */
+  [data-theme='dark'] {
+    --color-primary: 199 89% 53%;
+    --color-primary-foreground: 0 0% 100%;
+    --color-background: 222 47% 11%;
+    --color-foreground: 0 0% 100%;
+  }
+  
+  /* 3. 粉色主题 */
+  [data-theme='pink'] {
+    --color-primary: 322 100% 50%;
+  }
+  
+  /* 4. 绿色主题 */
+  [data-theme='green'] {
+    --color-primary: 142 71% 45%;
+  }
+  
+ 
+  /* 5. 响应式变量 */
+  @media (max-width: 767px) {
+    :root {
+      --font-size-base: 14px;
+      --spacing-unit: 0.5rem;
+    }
+  }

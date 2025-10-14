@@ -158,7 +158,7 @@ export default function Generator() {
                           Nano Banana
                           <select>
                             <option></option>
-                            <option value="nano-banana" selected>
+                            <option value="nano-banana">
                               Nano Banana
                             </option>
                             <option value="seedream4">SeeDream 4</option>

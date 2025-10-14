@@ -1,14 +1,12 @@
 'use client';
 
 import { Button, ButtonProps } from '@nextui-org/react';
-import type { IconProps } from '@phosphor-icons/react';
-import { MoonIcon, SunDimIcon } from '@phosphor-icons/react/dist/ssr';
+import { Moon, SunDim } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 
-const iconProps: IconProps = {
-  size: 16,
-  weight: 'bold',
+const iconProps = {
+  size: 16
 };
 
 export function ThemeSwitcher() {
@@ -33,13 +31,13 @@ export function ThemeSwitcher() {
         <Button
           {...buttonProps}
           onPress={() => setTheme('light')}
-          startContent={<MoonIcon {...iconProps} />}
+          startContent={<Moon {...iconProps} />}
         />
       ) : (
         <Button
           {...buttonProps}
           onPress={() => setTheme('dark')}
-          startContent={<SunDimIcon {...iconProps} />}
+          startContent={<SunDim {...iconProps} />}
         />
       )}
     </>
