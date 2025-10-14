@@ -18,7 +18,7 @@ export default function Sidebar({ activeMenu, changeActiveMenu }: any) {
 
   return (
     <div
-      className={`relative flex flex-col h-screen transition-all bg-white  border-r border-gray-200 dark:bg-gray-950 dark:border-gray-800 duration-300 ${
+      className={`relative flex flex-col h-screen transition-all bg-content1  border-r border-gray-200 dark:bg-gray-950 dark:border-gray-800 duration-300 ${
         isSidebarCollapsed ? 'w-20' : 'w-72'
       }`}
     >

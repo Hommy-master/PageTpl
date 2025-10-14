@@ -16,9 +16,9 @@ export default async function LocaleLayout({
       <body>
         <NextIntlProviderWrapper messages={messages} locale={locale}>
           <NextUIProviderWrapper>
-            <div className='min-h-screen bg-white dark:bg-gray-900'>
+            <div className='min-h-screen'>
               <Header />
-              <main className='flex h-screen bg-gray-50 dark:bg-gray-900 relative'>{children}</main>
+              <main>{children}</main>
             </div>
           </NextUIProviderWrapper>
         </NextIntlProviderWrapper>

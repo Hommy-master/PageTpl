@@ -8,7 +8,7 @@ export default function GeneratorPage() {
   const [activeMenu, setActiveMenu] = useState('adjustments');
 
   return (
-    <div className="flex size-full">
+    <div className="flex size-full ">
       {/* 左侧菜单 */}
       <Sidebar activeMenu={activeMenu} changeActiveMenu={setActiveMenu} />
 

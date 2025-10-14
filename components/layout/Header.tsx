@@ -9,7 +9,7 @@ import { ThemeSwitcher } from '@/components/features/ThemeSwitcher';
 export default function TopNav() {
   const t = useTranslations('nav'); // 对应 namespace
   return (
-    <Navbar maxWidth="2xl" isBordered className="border-b-yellow-200">
+    <Navbar maxWidth="2xl" isBordered className="sticky border-b-yellow-200">
       <NavbarBrand>
         <Link color="foreground" href="/" className="font-bold text-inherit text-amber-600 hover:text-amber-400">
           Demo

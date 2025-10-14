@@ -9,7 +9,8 @@ const config: Config = {
     // ❶ 关键：让 Tailwind 扫描 NextUI 的样式源
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
-  darkMode: ['class', '[data-theme="dark"]'], // 与 next-themes 属性保持一致
+  // darkMode: ['class', '[data-theme="dark"]'], // 与 next-themes 属性保持一致
+  darkMode: 'class',
   theme: {
     // extend: {
     //   colors: {
